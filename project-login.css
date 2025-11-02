@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+    .sec-one{
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .login-box img.logo {
+      width: 210px;
+      margin: 40px 0px 15px 0px;
+    }
+
+    .login-box h2 {
+      font-size: 21px;
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    .login-box .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 31px;
+      border: 1px solid #c3cbd8;
+      border-radius: 4px;
+      font-size: 14px;
+      height: 47px;
+    }
+    .login-box input:focus{
+  border: 1px solid #1976f9;  
+  outline: none; 
+}
+
+    .login-box .remember {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+
+    .login-btn {
+  display: inline-block;   
+  width: 100%;
+  padding: 14px;
+  background: #1772eb;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 19.5px;
+  font-weight: bold;
+  text-align: center;     
+  text-decoration: none;  
+  cursor: pointer;
+  margin-top: 30px;
+}
+.login-btn:hover {
+  background: #0f5ec4;     
+}
+
+
+    .login-box p {
+      font-size: 16px;
+      margin: 15px 0;
+      color: #666;
+      font-weight: 500;
+    }
+    .priv {
+        color: #666;
+    }
+    .priv:hover{
+        color: #1772eb;
+    }
+    hr.logh{
+        border-top: 1px solid #d2d8e2;
+        margin-top: 35px;
+        height: 0;
+    }
+    p.dont{
+        color: black;
+        font-size: 17px;
+    }
+    .dont a{
+        text-decoration: none;
+    }
+    .dont a:hover{
+        text-decoration: underline;
+        color: #1773eb33;
+    }
+
+    .login-box .app-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .app-buttons img {
+      height: 40px;
+      cursor: pointer;
+    }
+
+    button.social {
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  margin: 20px 0px 0px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;   
+}
+
+button.social img {
+  position: absolute;
+  left: 12px;          
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+}button.social:hover{
+    background-color: #1560a224;
+}
+.select-wrapper i {
+  position: absolute;
+  top: 62%;
+  left: 39%;
+  transform: translateY(-5%);
+  pointer-events: none;      
+  color: #555;
+}
+.remember input[type="checkbox"] {
+  width: 16px;          
+  height: 16px;
+  margin: 0 9px 0 0;    
+  padding: 0;
+  vertical-align: middle; 
+  border: 1px solid #d2d8e2;
+}
+.login-box .remember label {
+  display: flex;
+  align-items: center;    
+  cursor: pointer;
+}
+    .right-section {
+      width: 35%; 
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: url("bird.jpg") ;
+      background-size: cover;
+    }
+    .real{
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 84%;
+      left: 86%;
+    }
+    
+
+
+    .left-section {
+      margin-right: 40%;
+    }
+    
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+
+
+    @media (max-width: 900px) {
+    body {
+        flex-direction: column;
+          background-color: rgba(214, 27, 217, 0.2);
+          backdrop-filter: blur(10px);    
+
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .left-section {
+        margin-right: 0;
+    }
+    .select-wrapper i {
+        position: relative;
+        bottom: 55px;
+        right: 30px;
+}
+.real{
+    display: none;
+}
+.remember input[type="checkbox"] {
+  width: 16px;          
+  height: 16px;
+  margin: 0 9px 0 0;    
+  padding: 0;
+  vertical-align: middle; 
+  border: 1px solid #d2d8e2;
+}
+    .select-wrapper i {
+        position: relative;
+        bottom: 60px;
+        right: 30px;
+}
+
+}
+    
+
